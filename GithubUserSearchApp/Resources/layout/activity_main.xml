@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="10dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Query"
+        android:id="@+id/edit_search" />
+
+    <Button
+        android:layout_below="@id/edit_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Users"
+        android:id="@+id/btn_search_users"/>
+
+    <ListView
+        android:layout_below="@id/btn_search_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview_users"/>
+
+</RelativeLayout>
